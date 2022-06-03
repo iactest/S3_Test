@@ -19,3 +19,10 @@ resource "azurerm_postgresql_configuration" "example" {
      server_name         = azurerm_postgresql_server.example.name
      value               = "off"
 }
+
+resource "azurerm_postgresql_configuration" "example123" {
+     name                = "log_checkpoints123"
+     resource_group_name = "api-rg-pro"
+     server_name         = azurerm_postgresql_server.example.name
+     value               = "off"
+}
